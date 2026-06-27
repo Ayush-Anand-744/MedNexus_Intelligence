@@ -1,0 +1,28 @@
+services:
+  - type: web
+    name: mednexus-intelligence-api
+    env: python
+    rootDir: backend
+    buildCommand: pip install -r requirements.txt
+    startCommand: uvicorn main:app --host 0.0.0.0 --port $PORT
+    autoDeploy: true
+    envVars:
+      - key: PORT
+        value: 8000
+      - key: ENABLE_DEMO_FALLBACK
+        value: true
+      - key: CORS_ORIGINS
+        sync: false
+
+  - type: web
+    name: mednexus-intelligence-web
+    env: node
+    rootDir: frontend
+    buildCommand: npm install && npm run build
+    startCommand: npm start
+    autoDeploy: true
+    envVars:
+      - key: NODE_VERSION
+        value: 20
+      - key: NEXT_PUBLIC_API_URL
+        sync: false
