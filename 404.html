@@ -3,73 +3,72 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>MedNexus_Intelligence™</title>
-  <meta name="description" content="MedNexus_Intelligence is a full-stack medical report intelligence dashboard by Ayush Anand." />
+
+  <title>MedNexus_Intelligence</title>
+
+  <meta
+    http-equiv="refresh"
+    content="0; url=https://mednexus-intelligence.onrender.com"
+  />
+
+  <script>
+    window.location.replace("https://mednexus-intelligence.onrender.com");
+  </script>
+
   <style>
-    :root { color-scheme: dark; }
-    * { box-sizing: border-box; }
     body {
       margin: 0;
       min-height: 100vh;
-      display: grid;
-      place-items: center;
-      font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-      background:
-        radial-gradient(circle at top left, rgba(20,184,166,.35), transparent 32%),
-        radial-gradient(circle at bottom right, rgba(59,130,246,.28), transparent 34%),
-        #06111f;
-      color: #f8fafc;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: Arial, sans-serif;
+      background: #07111f;
+      color: #ffffff;
+      text-align: center;
       padding: 24px;
     }
+
     main {
-      width: min(920px, 100%);
-      border: 1px solid rgba(255,255,255,.16);
-      background: rgba(15,23,42,.74);
-      border-radius: 28px;
-      padding: clamp(28px, 5vw, 56px);
-      box-shadow: 0 30px 100px rgba(0,0,0,.38);
-      backdrop-filter: blur(18px);
+      max-width: 640px;
     }
-    .eyebrow {
-      color: #5eead4;
-      font-weight: 800;
-      letter-spacing: .14em;
-      text-transform: uppercase;
-      font-size: .78rem;
+
+    h1 {
+      margin-bottom: 10px;
+      font-size: 28px;
     }
-    h1 { margin: 12px 0 16px; font-size: clamp(2.1rem, 6vw, 4.8rem); line-height: .96; }
-    p { color: #cbd5e1; font-size: 1rem; line-height: 1.7; max-width: 720px; }
-    .actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 28px; }
+
+    p {
+      opacity: 0.85;
+      line-height: 1.6;
+    }
+
     a {
-      color: inherit;
-      text-decoration: none;
-      border: 1px solid rgba(255,255,255,.16);
-      padding: 12px 16px;
-      border-radius: 14px;
-      background: rgba(255,255,255,.08);
-      font-weight: 800;
+      color: #7dd3fc;
+      font-weight: 700;
     }
-    a.primary { background: linear-gradient(135deg, #14b8a6, #2563eb); border: 0; }
-    footer { margin-top: 28px; color: #94a3b8; font-size: .82rem; }
+
+    .owner {
+      margin-top: 22px;
+      opacity: 0.7;
+      font-size: 13px;
+    }
   </style>
 </head>
 <body>
   <main>
-    <div class="eyebrow">Medical Report Intelligence Dashboard</div>
-    <h1>MedNexus_Intelligence™</h1>
+    <h1>Opening MedNexus_Intelligence...</h1>
+
     <p>
-      A full-stack healthcare intelligence workspace for PDF medical report upload,
-      backend analysis, structured risk interpretation, report preview and portfolio-grade deployment.
+      If you are not redirected automatically,
+      <a href="https://mednexus-intelligence.onrender.com">
+        open the live project here
+      </a>.
     </p>
-    <p>
-      This GitHub Pages page is a project landing page. Deploy the FastAPI backend and Next.js frontend on Render for the complete working application.
+
+    <p class="owner">
+      © 2026 Ayush Anand · MedNexus_Intelligence™ · All rights reserved.
     </p>
-    <div class="actions">
-      <a class="primary" href="./RENDER_DEPLOYMENT_GUIDE.md">Deployment Guide</a>
-      <a href="./README.md">README</a>
-      <a href="./PROJECT_PROVENANCE.md">Project Provenance</a>
-    </div>
-    <footer>© 2026 Ayush Anand · MedNexus_Intelligence™ · All rights reserved.</footer>
   </main>
 </body>
 </html>
